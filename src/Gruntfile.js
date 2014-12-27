@@ -30,6 +30,7 @@ module.exports = function(grunt) {
         },
         files: {                         // Dictionary of files
           'creativefarm/css/styles.css': ['creativefarm/sass/styles.scss'],       // 'destination': 'source'
+          'creativefarm/css/mediaqueries.css': ['creativefarm/sass/mediaqueries.scss'], 
          }
       }
     },
@@ -39,7 +40,7 @@ module.exports = function(grunt) {
         separator: '',
       },
       dist: {
-        src: ['libs/foundation/css/foundation.min.css','creativefarm/css/styles.css'],
+        src: ['libs/foundation/css/foundation.min.css','creativefarm/css/styles.css','creativefarm/css/mediaqueries.css'],
         dest: '../dist/css/styles.min.css',
       },
     },
